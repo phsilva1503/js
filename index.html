@@ -15,16 +15,36 @@
     <script>
         //código js//
 
-      function soma(numero1, numero2){
+      function retornasexo(sexo) {
 
-        var resultado = numero1 + numero2;
+        switch (sexo) {
 
-        return resultado;
+            case 'm':
+                return 'masculino';
+                case 'f': 
+                return 'feminino'
+                default: 
+                return 'outros'
 
         }
 
-        var resultado = soma (1, 2);
-       console.log(resultado);
+        //m ou f
+        //masculino, feminino
+
+           /* if (sexo === "m") {
+              return 'masculino';
+          } else if (sexo === 'f') {
+              return 'feminino';
+          } else {
+              return 'outros';
+          }
+          */
+      }
+      
+                
+
+        var resultado = retornasexo ('m');
+        console.log(resultado);
 
     </script>
 </body>
