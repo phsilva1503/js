@@ -6,21 +6,45 @@
     <title>CURSO JS </title>
 </head>
 <body>
-    
+    <P>curso js</P>
+
+
+
+
 
     <script>
-        //and, or, not
+        //código js//
 
-        var sexo ="m";
-        var masculino = (sexo ==='m')
+      function retornasexo(sexo) {
 
-            
-            console.log(masculino);
+        switch (sexo) {
+
+            case 'm':
+                return 'masculino';
+                case 'f': 
+                return 'feminino'
+                default: 
+                return 'outros'
+
+        }
+
+        //m ou f
+        //masculino, feminino
+
+           /* if (sexo === "m") {
+              return 'masculino';
+          } else if (sexo === 'f') {
+              return 'feminino';
+          } else {
+              return 'outros';
+          }
+          */
+      }
+      
                 
 
-                
-
-                
+        var resultado = retornasexo ('m');
+        console.log(resultado);
 
     </script>
 </body>
