@@ -12,14 +12,22 @@
     
 
     <script>
-        //and, or, not
+        //MASCULINO OU FEMINIO
+        
+        function retornaSexo(sexo){
 
-        var sexo ="m";
-        var masculino = (sexo ==='m')
+           
+           switch(sexo){
 
-            
-            console.log(masculino);
-                
+               case 'm': return 'masculino'
+               case 'f' : return 'feminino'
+               default: return 'é o pablo vitar ou a tammy gretchen'
+
+           }
+        }
+
+        var resultado = retornaSexo('m');
+    alert (resultado);
 
                 
 
